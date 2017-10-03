@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sportz gifTASTIC App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src='assets/javascript/app.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="text-center">
+						Sportz gifTASTIC App
+					</h1>
+                    <br>
+                    <p class="text-center">
+                        Click on a sportz button to take a look at random gifs!
+                    </p>
+                    <br>
+                    <form class="text-center" id="myForm">
+                        <label for="sportz-input">
+                            Search for your own giphs here then click it's button:
+                        </label>
+                        <input type="text" id="sportz-input">
+                        <input type="submit" id="add-sport" value="Search">
+                    </form>
+                    <!-- end form  -->
+                    <div class="text-center" id="buttonz-view">
+                        <!-- buttonz go here -->
+                    </div>
+                    <!-- end buttonz view -->
+                </div>
+                <!-- end jumbotron -->
+            </div>
+            <!-- end col md 12 -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end conatiner -->
+    <div class="container">
+        <div class="row" id="sportz-row">
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</body>
+
+</html>
