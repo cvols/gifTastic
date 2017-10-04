@@ -46,12 +46,22 @@ $(document).ready(function() {
         // creating a new variable to grab the value, no end spaces, and make it caps to be uniform
         sport = $('#sportz-input').val().trim();
 
+        // if statement checking to see if there a value in the sportz-input field
+        if (sport === ''){
+            // if nothing just add the buttonz
+            addSportzButtonz();
+        } else {
+
         // adding the new val/var to the button group array
         sportz.push(sport);
 
         // calling the addSportzButton() again to get a new group of buttons
         addSportzButtonz();
 
+        $("#sportz-input").val("");
+        }; // end if statement
+
+       
     }); // end on add sport click 
 
     // on every button click with the class btn adding the gif info into custom col/thumbnail/caption divs
